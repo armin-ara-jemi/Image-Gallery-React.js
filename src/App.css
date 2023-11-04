@@ -1,0 +1,58 @@
+.image-gallery {
+  
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+ 
+}
+
+.image {
+  flex: 1;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: all 0.2s;
+}
+
+.image img {
+  border-radius: 2px;
+  width: 100%;
+  height: 100%;
+
+}
+.image:hover {
+  background-color: #696464;
+  border-radius: 2px;
+}
+
+.featured {
+  border-color: #007bff;
+  border-radius: 2px;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 4;
+}
+
+.featured:hover{
+  background-color: #696464;
+}
+
+.selected {
+  border-color: #28a745;
+  border-radius: 2px;
+  
+}
+
+.delete-button {
+  margin: 10px;
+  padding: 5px 10px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  background-color: #c82333;
+}
